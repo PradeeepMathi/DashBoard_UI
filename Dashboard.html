@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <script src="https://kit.fontawesome.com/73893ba2cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="header">
+        <div class="card">
+            <i class="fa-solid fa-cart-shopping"
+                style="color: white;font-size: 30px;background-color: rgb(64,111,198); padding: 15px; border-radius: 50px;margin-top: 30px;"></i>
+            <h3>Order</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-boxes-stacked"
+                style="color:white;font-size: 30px;background-color:rgb(254,150,112); padding: 15px; border-radius: 50px;margin-top: 30px;"></i>
+            <h3>Products</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-user"
+                style="color:white;font-size: 30px;background-color:rgb(86,216,240); padding: 15px; border-radius: 50px;margin-top: 30px;"></i>
+            <h3>Customers</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-handshake-angle"
+                style="color:white;font-size: 30px;background-color:rgb(100,199,122); padding: 15px; border-radius: 50px;margin-top: 30px;"></i>
+            <h3>Salse</h3>
+        </div>
+        <div class="Detail">
+            <h3>Products(s) sold out!</h3>
+            <p>More Info</p>
+        </div>
+        <div class="Detail">
+            <h3>Products(s) in low stock!</h3>
+            <p>More Info</p>
+        </div>
+    </div>
+    <div class="heading">
+        <h2>order out lines</h2>
+    </div>
+    <div class="content">
+        <div class="card2">
+            <h4><i class="fa-solid fa-sack-dollar"
+                    style="color:white;font-size:20px;background-color:rgb(255,109,145); padding: 15px; border-radius: 50px;"></i>
+                Payment Pending</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-circle-arrow-down"
+                    style="color:white;font-size:20px;background-color:rgb(180,123,255); padding: 15px; border-radius: 50px;"></i>
+                Resived</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-box-open"
+                    style="color:white;font-size:20px;background-color:rgb(69,189,134); padding: 15px; border-radius: 50px;"></i>
+                Processed</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-truck"
+                    style="color:white;font-size:20px;background-color:rgb(229,198,70); padding: 15px; border-radius: 50px;"></i>
+                shipped</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-truck-fast"
+                    style="color:white;font-size:20px;background-color:rgb(73,73,73); padding: 15px; border-radius: 50px;"></i>
+                Out For Delivery</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-gift"
+                    style="color:white;font-size:20px;background-color:rgb(255,127,96); padding: 15px; border-radius: 50px;"></i>
+                Delivered</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-xmark"
+                    style="color:white;font-size:20px;background-color:rgb(48,140,235); padding: 15px; border-radius: 50px;"></i>
+                Cancelled</h4>
+        </div>
+        <div class="card2">
+            <h4><i class="fa-solid fa-reply"
+                    style="color:white;font-size:20px;background-color:rgb(73,73,73); padding: 15px; border-radius: 50px;"></i>
+                Returned</h4>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="heading">
+            <h2>order out lines</h2>
+        </div>
+        <div class="content3">
+            <div class="Title">
+                <p>From & To Date</p>
+                <div class="out-date">
+                    <input type="datetime-local"
+                        style="width: 200px; padding: 10px;border-radius:5px; border-color: rgb(204,204,204);">
+                    <div class="close-btn">clear
+                    </div>
+                </div>
+            </div>
+            <div class="Title">
+                <p>Status</p>
+                <select style="width: 200px;padding: 10px;border-radius:5px; border-color: rgb(204,204,204);">
+                    <option>All Orders </option>
+                </select>
+            </div>
+            <div class="Title">
+                <p>Seller</p>
+                <select style="width: 200px;padding: 10px;border-radius:5px; border-color: rgb(204,204,204);">
+                    <option>Select Seller </option>
+                </select>
+            </div>
+            <div class="Title">
+                <p>Search</p>
+                <div class="out-date">
+                    <input type="search" placeholder="Search"
+                        style="padding: 10px;border-radius:5px; border-color: rgb(204,204,204);">
+                    <div class="close-btn-1">
+                        <i class="fa-solid fa-repeat" style="background-color: rgb(55,162,121); font-size: 15px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <diV class="order-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>O.ID</th>
+                        <th>User</th>
+                        <th>Mobile</th>
+                        <th>Total($)</th>
+                        <th>D.charges($)</th>
+                        <th>F.Total($)</th>
+                        <th>p.Method</th>
+                        <th>D.Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                        <td>Data 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pag-btn">
+            <div id="pagination">
+                <ul>
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-1">
+            <div class="heading">
+                <h2>Top sellers</h2>
+            </div>
+            <diV class="sellers-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="one">ID</th>
+                            <th class="two"> Saller</th>
+                            <th class="two">Store Name</th>
+                            <th class="two">Total Revenue</th>
+                            <th class="two">active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="one">Data 1</td>
+                            <td class="two">Data 2</td>
+                            <td class="two">Data 3</td>
+                            <td class="two">Data 3</td>
+                            <td class="two">Data 3</td>
+                        </tr>
+                        <tr>
+                            <td class="one">Data 1</td>
+                            <td class="two">Data 2</td>
+                            <td class="two">Data 3</td>
+                            <td class="two">Data 3</td>
+                            <td class="two">Data 3</td>
+                    </tbody>
+                </table>
+            </diV>
+            <div class="pag-btn">
+                <div id="pagination">
+                    <ul>
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="footer-2">
+                <div class="heading">
+                    <h2>Top Categories</h2>
+                </div>
+                <diV class="Order-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="one">ID</th>
+                                <th class="two"> Saller</th>
+                                <th class="two">Store Name</th>
+                                <th class="two">Total Revenue</th>
+                                <th class="two">active</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="one">Data 1</td>
+                                <td class="two">Data 2</td>
+                                <td class="two">Data 3</td>
+                                <td class="two">Data 3</td>
+                                <td class="two">Data 3</td>
+                            </tr>
+                            <tr>
+                                <td class="one">Data 1</td>
+                                <td class="two">Data 2</td>
+                                <td class="two">Data 3</td>
+                                <td class="two">Data 3</td>
+                                <td class="two">Data 3</td>
+                        </tbody>
+                    </table>
+                </diV>
+                <div class="pag-btn">
+                    <div id="pagination">
+                        <ul>
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

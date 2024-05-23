@@ -1,0 +1,232 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(242,247,255);
+}
+/* Add a media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .header, .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .Detail, .card2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.heading{
+    color: rgb(37,57,111);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+    
+}
+.card{
+    color: rgb(137,148,183);
+    background:rgb(255,255,255);
+    display: inline-block;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* Add styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.Detail{
+    background:rgb(255,255,255);
+    display: inline-block;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+}
+.Detail p{
+    color: rgb(55,162,121);
+    margin-top: 50px;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    background:rgb(235,243,255);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+/* Add styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .Detail p {
+        width: 90%;
+    }
+}
+.Detail p:hover{
+    background: rgb(69,188,138);
+    color: white;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+.card2{
+    color: rgb(137,148,183);
+    background:rgb(255,255,255);
+    display: inline-block;
+    width: 340px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+/* Add styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .card2 {
+        width: 90%;
+    }
+}
+.card2:hover{
+    transform: translateY(-10px);
+}
+
+.heading {
+    color: rgb(37, 57, 111);
+    margin: 15px;
+}
+
+/* Content Styles */
+.content2 {
+    background: white;
+    padding: 15px;
+}
+
+.content3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.out-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.close-btn,
+.close-btn-1 {
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+.close-btn {
+    background-color: rgb(220, 53, 69);
+}
+
+.close-btn-1 {
+    background-color: rgb(55, 162, 121);
+}
+
+.Title {
+    color: rgb(55, 162, 121);
+}
+
+/* Table Styles */
+.order-table,
+.sellers-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid rgb(220, 231, 241);
+    color: rgb(132, 114, 128);
+}
+
+/* Pagination Styles */
+.pag-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pagination ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#pagination ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#pagination ul li a.active {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.footer-1,
+.footer-2 {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.one {
+    padding: 0;
+    width: 60px;
+}
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .content3 .Title {
+        width: 100%;
+    }
+}
